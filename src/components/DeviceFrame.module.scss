@@ -1,0 +1,108 @@
+.container {
+    padding: 24px;
+    height: calc(100vh - 48px);
+}
+
+.frame {
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    overflow: auto;
+}
+
+.controls {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 12px;
+
+    :global(.ant-btn) {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px !important;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        &.ant-btn-primary {
+            background: rgba(117, 70, 201, 0.2);
+            border-color: #7546C9;
+            color: #7546C9;
+        }
+
+        .anticon {
+            font-size: 20px;
+        }
+    }
+}
+
+.iconButton {
+    backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.platformSwitch {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    :global(.ant-switch-checked) {
+        background-color: rgba(117, 70, 201, 0.2);
+    }
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.deviceLabel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #7546C9, #b19af1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

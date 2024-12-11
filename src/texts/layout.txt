@@ -1,0 +1,56 @@
+{/* <Layout>
+                <Sider
+                    width={250}
+                    collapsible
+                    collapsedWidth={48}
+                    collapsed={collapsed}
+                    onCollapse={setCollapsed}
+                    className={styles.sider}
+                >
+                    <Menu
+                        mode="inline"
+                        defaultSelectedKeys={['1']}
+                        items={[
+                            {
+                                key: '1',
+                                icon: <DesktopOutlined />,
+                                label: 'Dashboard',
+                            },
+                            {
+                                key: '2',
+                                icon: <MobileOutlined />,
+                                label: 'Devices',
+                            },
+                            {
+                                key: '3',
+                                icon: <AppleOutlined />,
+                                label: 'Analytics',
+                            },
+                            {
+                                key: '4',
+                                icon: <WindowsOutlined />,
+                                label: 'Settings',
+                            },
+                            {
+                                key: '5',
+                                icon: <ChromeOutlined />,
+                                label: 'Reports',
+                            },
+                        ]}
+                        style={{
+                            borderRight: 0,
+                            backgroundColor: 'transparent'
+                        }}
+                    />
+                </Sider>
+
+
+                <Layout
+                    className={styles.contentWrapper}
+                    style={{ marginLeft: collapsed ? 48 : 250 }}
+                >
+                    <Content className={styles.content}>
+                        <DeviceFrame />
+                    </Content>
+                </Layout>
+            </Layout> */}
